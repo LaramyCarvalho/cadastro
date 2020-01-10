@@ -1,0 +1,28 @@
+<html>
+<head>
+  <title> Cadastro da Empresa </title>
+
+  <script src="cadastro.js"></script>
+  <link rel="stylesheet" type="text/css" href="cadastro.css" media="screen" />
+
+</head>
+<body>
+ <h2> Cadastro </h2>
+ <form onSubmit="">
+ <div id="cadastro">
+	<p> CNPJ <input id="cnpj" name="CNPJ" type="text" onkeypress="validar(cnpj)" required maxlength="14" placeholder="99.999.999/9999-99" /> </p>
+	<p> Razão social <input id="razao" name="Razao Social" type="text" required value="" /> </p>
+	<p> Nome do Responsável <input id="nome" name="Nome do Responsável" type="text" required value="" /> </p>
+	<p> CPF <input id="cpf" type="text" name="CPF" placeholder="999.999.999-99" onkeypress="validar(cpf)" required maxlength="11" /> </p>
+	<p> Empresa </p>
+	<p> Endereço <input id="endereco" name="Endereco" type="text" required value="" /> </p>
+	<p> Bairro <input id="bairro" name="Bairro" type="text" required value="" /> </p>
+	<p> CEP <input id="cep" name="CEP" type="text" placeholder="99.999-999" required onkeypress="validar(cep)" maxlength="8" /> </p>
+	<p> Complemento <input id="complemento" name="Complemento" type="text" value="" /> </p>
+	<p> Cidade <input id="cidade" name="Cidade" type="text" required value="" /> </p>
+	<p> Estado <input id="estado" name="Estado" type="text" required value="" /> </p>
+	<p> <button onclick="salvar(cnpj, razao, nome, cpf, endereco, bairro, cep, complemento, cidade, estado)" > Salvar </button> </p>
+ </div>
+ </form>
+</body>
+</html>
